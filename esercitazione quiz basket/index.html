@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Il mio sport preferito: Basket</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Basketball</h1>
+		<img src="img/basket.jpg" alt="Basketball" width="200">
+		
+		<p>Il basket è uno sport di squadra in cui due squadre cercano di segnare punti lanciando la palla in un canestro.</p>
+		
+		<h2>Regole principali:</h2>
+		<ul>
+			<li>Una partita è divisa in 4 quarti da 10 o 12 minuti.</li>
+			<li>Ogni squadra ha 5 giocatori in campo.</li>
+			<li>Non è permesso camminare con la palla senza palleggiare.</li>
+		</ul>
+		
+		<h2>Dove si gioca a Basket</h2>
+		<div class="bandiera">
+			<div id="NewYork">
+				<h3>New York</h3>
+				<img src="img/newyork.jpg" alt="New York" width="100">
+				<p>La città dell'NBA, con il famoso Madison Square Garden.</p>
+			</div>
+			<div id="LosAngeles">
+				<h3>Los Angeles</h3>
+				<img src="img/losangeles.jpg" alt="Los Angeles" width="100">
+				<p>Casa dei Lakers e dei Clippers, icona del basket professionistico.</p>
+			</div>
+			<div id="Chicago">
+				<h3>Chicago</h3>
+				<img src="img/chicago.jpg" alt="Chicago" width="100">
+				<p>Dove Michael Jordan ha scritto la storia con i Bulls.</p>
+			</div>
+		</div>
+		
+		<p>Per saperne di più, visita il sito ufficiale della <a href="https://www.nba.com">NBA</a>.</p>
+		
+		<h2>Quiz sul Basket</h2>
+		<form onsubmit="checkAnswers(event)">
+			<p>1. Quanti giocatori ha una squadra in campo?</p>
+			<input type="radio" name="giocatori" value="4"> 4<br>
+			<input type="radio" name="giocatori" value="5"> 5<br>
+			<input type="radio" name="giocatori" value="6"> 6<br>
+			
+			<p>2. Quali di questi elementi fanno parte del basket?</p>
+			<input type="checkbox" name="elementi" value="palla"> Palla<br>
+			<input type="checkbox" name="elementi" value="tabellone"> Tabellone<br>
+			<input type="checkbox" name="elementi" value="mazza"> Mazza<br>
+			
+			<p>3. Quale città è famosa per i Bulls?</p>
+			<input type="radio" name="citta" value="New York"> New York<br>
+			<input type="radio" name="citta" value="Chicago"> Chicago<br>
+			<input type="radio" name="citta" value="Los Angeles"> Los Angeles<br>
+			
+			<br>
+			<input type="submit" value="Verifica Risposte">
+		</form>
+		
+		<p id="risultato" ></p>
+    
+	</body>
+</html>

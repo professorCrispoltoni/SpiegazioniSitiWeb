@@ -1,0 +1,36 @@
+.bandiera {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    border: solid;
+}
+.bandiera div {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px;
+}
+.bandiera img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+#risultato{
+	font-weight: bold; 
+	margin-top: 10px;
+}
+
+#NewYork { background-color: #FFD700; }
+#LosAngeles { background-color: #800080; color: white; }
+#Chicago { background-color: #FF0000; color: white; }
+
+@media (max-width: 800px) {
+    .bandiera {
+        flex-direction: column;
+    }
+    .bandiera div {
+        width: 100%;
+    }
+}
