@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>Kobe Bryant</title>
+	  <link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+	  <!-- Navbar -->
+	  <nav class="navbar">
+		<div class="logo">Kobe Bryant</div>
+		
+		<!-- Menu Hamburger -->
+		<div class="hamburger" onclick="toggleMenu()">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		
+		<ul class="nav-links">
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#bio">Biografia</a></li>
+		  <li><a href="#stats">Statistiche</a></li>
+		  <li><a href="#gallery">Gallery</a></li>
+		</ul>
+	  </nav>
+
+	  <!-- Hero Section -->
+	  <header class="hero" id="home">
+		<img src="img/kobe.jpg" alt="Kobe Bryant" class="hero-img" />
+		<div class="hero-overlay"></div>
+		<div class="hero-text">
+		  <h1>Mamba Mentality</h1>
+		  <p>Una leggenda dell’NBA. 5 volte campione. Per sempre nei cuori.</p>
+		</div>
+	  </header>
+
+	  <!-- Biografia -->
+	  <section class="bio" id="bio">
+		<h2>Biografia</h2>
+		<p>
+		  Kobe Bryant è stato uno dei più grandi giocatori della storia del basket. Nato il 23 agosto 1978, ha giocato per 20 stagioni con i Los Angeles Lakers, vincendo 5 titoli NBA. Celebre per la sua “Mamba Mentality”, Kobe ha lasciato un’impronta indelebile nello sport e nella cultura pop.
+		</p>
+	  </section>
+
+	  <!-- Statistiche -->
+	  <section class="stats" id="stats">
+		<h2>Statistiche</h2>
+		<div class="stats-grid">
+		  <div><strong>Partite:</strong> 1346</div>
+		  <div><strong>Punti totali:</strong> 33.643</div>
+		  <div><strong>Media punti:</strong> 25.0</div>
+		  <div><strong>Titoli NBA:</strong> 5</div>
+		  <div><strong>All-Star:</strong> 18 volte</div>
+		  <div><strong>Oro Olimpico:</strong> 2 (2008, 2012)</div>
+		</div>
+	  </section>
+
+	  <!-- Gallery -->
+	  <section class="gallery" id="gallery">
+		<h2>Gallery</h2>
+		<div class="gallery-flex">
+		  <img src="img/kobe1.jpg" alt="Kobe 1" />
+		  <img src="img/kobe2.jpg" alt="Kobe 2" />
+		  <img src="img/kobe3.jpg" alt="Kobe 3" />
+		  <img src="img/kobe4.jpg" alt="Kobe 3" />
+		</div>
+	  </section>
+	  
+	<!-- Script JS -->
+	<script>
+		// Funzione per attivare/disattivare il menu hamburger
+		function toggleMenu() {
+			var navbar = document.querySelector('.navbar');
+			var hero = document.querySelector('.hero');
+			navbar.classList.toggle('active');  // Attiva il menu hamburger
+
+			// Controlla se il menu è attivo e sposta il contenuto di conseguenza
+			if (navbar.classList.contains('active')) {
+				hero.style.marginTop = '120px';  // Aggiungi margine quando il menu è aperto
+			} else {
+				hero.style.marginTop = '0px';  // Rimuovi margine quando il menu è chiuso
+			}
+		}
+	</script>
+
+	</body>
+</html>
