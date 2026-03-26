@@ -1,0 +1,39 @@
+.bandiera {
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+  border:solid;
+}
+
+.bandiera div {
+  width: 33.33%; 
+  float:left;
+  text-align:center;
+}
+
+#Oslo {
+  background-color: #FF0000;
+}
+
+#London {
+  background-color: #00ff00;
+}
+
+#Rome {
+  background-color: #ffffff;
+}
+
+div p{
+	font-family:courier;
+}
+
+@media (max-width: 800px){
+	.bandiera {
+		flex-direction: column;
+	}
+	.bandiera div {
+		width: 100%; 
+	}
+}
